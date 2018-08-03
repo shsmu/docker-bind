@@ -1,0 +1,4 @@
+bind:
+  image: shsmu/cka-bind
+  env_file: bind.env
+  net: "host"

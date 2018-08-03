@@ -7,6 +7,7 @@ ENV BIND_VERSION 2.8.0
 RUN yum -y install wget epel-release && \
 yum -y install bind && \
 yum -y update && \
+yum -y supervisor && \
 yum clean all
 
 ADD supervisord.d/conf.ini /etc/supervisord.d/conf.ini
